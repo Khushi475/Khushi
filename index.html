@@ -1,30 +1,95 @@
 !DOCTYPE html>
 <html>
 <head>
-    <title>23BDS1012 LAB-4 09.01.25</title>
+<title>Checkbox Control</title>
 </head>
+<h1>6.1.25<h1>
+<h1>Checkbox<h1>
 <body>
-<div style="height: 50vh; background-color: peachpuff; display: flex; justify-content: center; align-items: center;">
-        <article>
-            <h1>Welcome to my page!</h1>
-            <p>Myself Khushi Kumari, 23BAI1324. Here I have the lab assignment given:<br>-->frames, by dividing the page into 2 frames horitonally<br>-->Snowman, by circles and lines<br>-->Mickey Mouse by puttting black circles together<br>I have also used the tags to write this article. I am now submitting this work in lms for grading. Thank you for reading!</p>
-        </article>
-    </div>
-    <div style="background-color: lightblue">
-        <svg width="800" height="400">
-            <circle cx="200" cy="200" r="50" fill="black"/>
-            <circle cx="150" cy="150" r="30" fill="black"/>
-            <circle cx="250" cy="150" r="30" fill="black"/>
+<form>
+<input type="checkbox" name="science" value="on">Computer
+<input type="checkbox" name="chemistry" value="on">Chemistry
+<h1>Radio<h1>
+<input type="radio" name="subject" value="Web Programming"> Web Programming
+<input type="radio" name="subject" value="DBMS">DBMS
+<select name="dropdown">
+<option value="Web Programming" selected>Web Programming</option>
+<option value="DBMS">DBMS</option>
+<h1>File Upload<h1>
+<input type="file" name="uploadfile"/><br>
+<input type="file" name="thisfile" multiple><br>
+<input type="file" name="uploadfile" accept=" audio/*,video/*,image/*"/><br>
+<input type="submit"><br>
+<input type="submit" name="submit" value="Submit" /><br>
+<input type="reset" name="reset" value="Reset" /><br>
+<input type="button" name="ok" value="OK" /><br>
+</form>
+<style>
+table {
+width: 80%;
+border-collapse: collapse;
+margin: 20px auto;
+text-align: left;
+}
+th, td{
+border: 1px solid #000;
+padding: 10px;
+}
+th{
+background-color: #f2f2f2;
+text-align: center;
+}
+.center{
+text-align: center;
+}
+</style>
+<h1 style="text-align: center;">Complicated Table with Row and Column Merge</h1>
+<table>
+<tr>
+<th rowspan="3"><img src="C:\Users\student\Pictures\Random_person.jpg" alt="Random_person" 
+width="100"></td></th>
+<th colspan="2">Personal Details</th>
+<th colspan="2">Professional Details</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Profession</th>
+<th>Experience (Years)</th>
+</tr>
+<tr>
+<td>John Doe</td>
+<td>30</td>
+<td>Engineer</td>
+<td>8</td>
+</tr>
+<tr>
+<td rowspan="3"><img src="C:\Users\student\Pictures\Random_person.jpg" alt="Random_person" 
+width="100"></td>
+<td>Jane Smith</td>
+<td>28</td>
+<td>Doctor</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Emily Davis</td>
+<td>25</td>
+<td>Artist</td>
+<td>3</td>
+</tr>
+<td colspan="5" class="center">
+This table demonstrates complex row and column merging with a mix of text and images.
+</td>
+</tr>
+</table>
+<video width="600" controls>
+<source src="C:\Users\student\Pictures\random_video.mp4" type="video/mp4">
+</video>
+<audio controls>
+<source src="C:\Users\student\Downloads\three-random-tunes-girl-200030.mp3" type="audio/mp3">
+</audio>
  
-            <circle cx="600" cy="150" r="30" fill="white" stroke="black"/>
-            <circle cx="600" cy="220" r="40" fill="white" stroke="black"/>
-            <circle cx="600" cy="310" r="50" fill="white" stroke="black"/>
- 
-            <circle cx="590" cy="140" r="5" fill="black"/> <!-- Left Eye -->
-            <circle cx="610" cy="140" r="5" fill="black"/> <!-- Right Eye -->
-            <circle cx="600" cy="153" r="5" fill="orange"/> <!-- Nose -->
-            <line x1="590" y1="165" x2="610" y2="165" style="stroke:black;stroke-width:2"/> <!-- Smile -->
-        </svg>
-    </div>
 </body>
 </html>
+
+
